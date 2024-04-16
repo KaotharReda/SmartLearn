@@ -1,24 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter as Router, Route, Link, Routes} from 'react-router-dom';
+import CourseCatalog from './components/CourseCatalog';
+import UserAccount from './components/UserAccount';
+import Forums from './components/Forums';
+import Logout from './components/Logout';
+import PersonalizedPath from './components/PersonalizedPath';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+      <Router>
+        <nav>
+          <Link to="/course-catalog">Course Catalog</Link> |
+          <Link to="/user-account">User Account</Link> |
+          <Link to="/forums">Forums</Link> |
+          <Link to="/logout">Logout</Link> |
+          <Link to="/personalized-path">Personalized Path</Link>
+        </nav>
+        <Routes>
+          <Route path="/course-catalog" component={CourseCatalog} />
+          <Route path="/user-account" component={UserAccount} />
+          <Route path="/forums" component={Forums} />
+          <Route path="/logout" component={Logout} />
+          <Route path="/personalized-path" component={PersonalizedPath} />
+          <Route path="/" exact component={CourseCatalog} />
+        </Routes>
+      </Router>
   );
 }
 
