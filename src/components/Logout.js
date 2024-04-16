@@ -1,14 +1,13 @@
 // src/components/Logout.js
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 
 function Logout() {
-    let history = useHistory();
+    let navigate = useNavigate();
 
     const handleLogout = () => {
-        // Here you would normally handle the logout logic
         console.log('User logged out');
-        history.push('/'); // Redirect to home page after logout
+        navigate('/');
     };
 
     return (
