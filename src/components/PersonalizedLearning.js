@@ -1,8 +1,8 @@
-// src/components/PersonalizedPath.js
+// src/components/PersonalizedLearning.js
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function PersonalizedPath() {
+function PersonalizedLearning() {
     return (
         <div>
             <h1>Personalized Learning Path</h1>
@@ -12,4 +12,4 @@ function PersonalizedPath() {
     );
 }
 
-export default PersonalizedPath;
+export default PersonalizedLearning;
