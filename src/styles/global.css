@@ -263,6 +263,52 @@
     border-radius: 8px;
     margin-bottom: 20px;
 }
+.logout-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
 
+.logout-container h1 {
+    color: cadetblue;
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;
+}
 
+.logout-container p {
+    font-size: 16px;
+    color: #666;
+}
+
+.logout-container button {
+    padding: 10px 20px;
+    background-color: #489293;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.logout-container button:hover {
+    background-color: #305050;
+}
+
+.cancel-link {
+    display: block;
+    margin-top: 15px;
+    color: #489293;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cancel-link:hover {
+    color:  #305050;
+}
 
