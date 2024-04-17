@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../styles/Header.css';
-import { FaHome, FaBook, FaUser, FaComments, FaSignOutAlt, FaLeanpub} from 'react-icons/fa'; // Importing FontAwesome icons
+import { FaHome, FaBook, FaUser, FaComments, FaSignOutAlt, FaLeanpub, FaUniversity} from 'react-icons/fa';
 
 
 function Header() {
@@ -10,9 +10,9 @@ function Header() {
             <h1><Link to="/" className="logo"><FaLeanpub/> SmartLearn</Link></h1>
             <nav>
                 <Link to="/course-catalog"><FaBook /> Courses</Link>
-                <Link to="/user-account"><FaUser /> Account</Link>
                 <Link to="/forums"><FaComments /> Forums</Link>
-                <Link to="/personalized-path"> Personalize</Link>
+                <Link to="/personalized-path"> <FaUniversity/> Personalize</Link>
+                <Link to="/user-account"><FaUser /> Account</Link>
                 <Link to="/logout"><FaSignOutAlt /> Logout</Link>
             </nav>
         </header>
