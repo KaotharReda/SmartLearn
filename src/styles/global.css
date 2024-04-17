@@ -201,5 +201,68 @@
     color: #d5c512;
 }
 
+.personalized-learning {
+    padding: 20px;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.personalized-learning h1, .personalized-learning h2 {
+    color: cadetblue;
+    padding: 20px;
+    margin: 0px;
+    font-size: 30px;}
+
+.personalized-learning .current-courses, .personalized-learning .recommended-courses, .personalized-learning .learning-goals {
+    background-color: white;
+    padding: 15px;
+    margin-top: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.personalized-learning .course, .personalized-learning .goal {
+    padding: 10px;
+    margin: 5px 0;
+    border-bottom: 1px solid #ddd;
+    background-color: white;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+.personalized-learning .course:hover, .personalized-learning .goal:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+.personalized-learning .course:last-child, .personalized-learning .goal:last-child {
+    border-bottom: none;
+}
+
+.personalized-learning h2 {
+    display: flex;
+    align-items: center;
+    color: cadetblue;
+    font-size: 22px;
+}
+
+.personalized-learning h2 svg {
+    margin-right: 10px;
+    color: cadetblue;
+    font-size: 1.8em;
+
+}
+
+.personalized-learning .learning-image {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
 
 
